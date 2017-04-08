@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Hello, World</title>  
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4">
+//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+</script>
+</head>  
+ 
+<body>  
+<div id="container"></div> 
+<script type="text/javascript"> 
+	var map =new BMap.Map('container');  
+    map.centerAndZoom(new BMap.Point(120.336723, 30.320286), 18);  
+    var icon = new BMap.Icon(' http://wx.qlogo.cn/mmopen/pCMydDqHYHdPw8usMFAtJBTnSPjDUicqH9X3UkpCvafibFZGibhh1p6GAqo0iaL91AuYOdJMBdrY3GXEoOjSvl0mlg/0 ', new BMap.Size(64,64));
+	var mkr =new BMap.Marker(new BMap.Point(120.336723,30.320286), {  icon: icon   });  
+    map.addOverlay(mkr); 
+     
+</script>  
+</body>  
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>Report</title>
+<script language="javascript" >
+
+function fsubmit(obj)
+{
+	obj.submit();
+}
+</script>
+<style type="text/css">
+body {
+	background-color:B3B3B3;
+}
+#login_module {
+
+	margin-top:10%;
+	margin-left:5%;
+}
+#Distinguish_s {
+	margin-top:3%;
+	margin-left:33%;
+	
+	font-size:1.7em;
+
+}
+#Distinguish_b {
+	margin-top:3%;
+	margin-left:16%;
+	font-size:1.7em;
+
+}
+#Submit_data {
+	margin-left:35%;
+	font-size:1.1em;
+	
+}
+
+input.S{
+	font-size:1.0em;
+	width:4.7em;
+}
+
+input.TI {
+	font-size:1.4em;
+	margin-left:16%;
+	
+}
+td {
+	font-size:1.3em;
+}
+
+</style>
+</head>
+<body>
+<div id="login_module">
+   <form name="login_form" id="login_form" method="post" enctype="multipart/form-data"
+   action="http://www.personalwebhhf.cn/PHP/Test_Module.php">
+    <fieldset>
+      <table>
+		<span id="Distinguish_S">胜方</span><span id="Distinguish_b">败方</span>
+		<tr>
+		<td> &nbsp; </td>
+		</tr>
+	    <tr>
+		  <td>学号：</td>
+		  <td><input class="S" type="text" name="Winner_ID" ></td> 
+		  <td><input class="S" type="text" name="Loser_ID" ></td>  
+		</tr>	
+		<tr>
+		  <td>比分：</td>
+		  <td><input class="S" type="text" name="Winner_Score"></td>
+		  <td><input class="S" type="text" name="Loser_Score"></td>
+	
+		</tr>	
+		<tr>
+		  <td>裁判:</td>
+		  <td><input class="S" type="text" placeholder="输入学号" name="Judge_ID"></td>
+		  <td><input class="S" type="file" name="file"  /></td>
+		</tr>
+	  </table>
+	  </fieldset>
+	</form>
+	<div id="Submit_data">
+		<input  class="TI" type="button"  value="提交" onClick="javascript:fsubmit(document.login_form);"/>
+	</div>
+</div>
+</body>
+</html>
+	
+	
+	
